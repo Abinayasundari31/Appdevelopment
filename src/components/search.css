@@ -1,0 +1,39 @@
+.background{
+    background-image: url("https://im.indiatimes.in/facebook/2019/Jun/indian_railways_1559993403.jpg");
+    background-size: cover;
+    height:100%;
+  }
+  .top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+   
+  }
+  
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0px 500px;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #66ccff;
+  }

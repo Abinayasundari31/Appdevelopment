@@ -1,0 +1,158 @@
+.loginx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0e0202;
+    background-size: cover;
+    display: relative;
+    left: 700px;
+    background-image: url("https://www.wallpaperflare.com/static/105/420/987/photography-railway-tunnel-green-wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    transform: translateZ(0);
+    animation: parallax 10s linear infinite;
+  }
+  
+  .login-container {
+    position: relative;
+    left: 400px;
+    background-color: rgb(207, 205, 205);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 1px rgba(59, 59, 64, 0.581);
+    font-size: 1rem;
+  color: rgb(250, 246, 246);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgb(15, 69, 15);
+  border-style: double;
+  background-color: rgba(6, 61, 6, 0.598);
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+   
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #efeaee;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    button {
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    button:hover {
+      background-color: #0056b3; /* Change the background color on hover */
+    }
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .a{
+    position: relative;
+    right: 5px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  .input{
+    border-radius: 900px;
+    background-color: #faf6f6c6;
+    border-radius: 5px;
+  }
+
+  .top-bar {
+    background-color: #333;
+    color: white;
+    /* padding: 10px 200px; */
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .logo {
+    font-size: 24px;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* You can adjust the background color as needed */
+    color: #fff; /* You can adjust the text color as needed */
+    padding: 10px; /* Add padding for spacing */
+    z-index: 100; /* Ensure it's on top of other content */
+  }
+  
+  /* Style the navigation links */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+  }
+  
+  .nav-btn {
+    text-decoration: none;
+    color: #fff; /* Text color for navigation links */
+    font-weight: bold;
+  }
+  
+  /* Style the logo */
+  .logo {
+    font-size: 24px;
+    margin-right: auto; /* Pushes the logo to the left */
+    margin-left: 20px; /* Add left margin for spacing */
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

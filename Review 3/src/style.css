@@ -1,0 +1,267 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+* {
+  box-sizing: border-box;
+}
+.search-container {
+  border: solid;
+  width: 3000px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 241, 241);
+  flex-direction: row;
+  margin: auto;
+}
+.search-container .form-group {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.search-container input {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.search-container button {
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 10px;
+  background-color: rgba(3, 54, 3, 0.598);
+  color: rgb(7, 0, 0);
+}
+
+.search-container button:hover {
+  background-color: black;
+  color: black;
+  cursor: pointer;
+}
+
+.was-validated input:invalid {
+  background-color: rgb(14, 37, 11);
+  border: solid rgb(8, 1, 1);
+}
+
+.error-alert {
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(2, 24, 1);
+  border: solid rgb(18, 7, 2);
+}
+
+.buses-avail-container .bus-avail {
+  display: flex;
+  flex-direction: column;
+  background: rgb(86, 163, 116);
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.buses-avail-container .bus-avail:nth-child(odd) {
+  background-color: rgb(81, 60, 116);
+}
+
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+  color: aliceblue;
+}
+
+.seat {
+  visibility: hidden;
+}
+
+.seat + label {
+  background-color: lightcyan;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.seat:checked + label {
+  background-color: green;
+}
+.seat:disabled + label {
+  background-color: lightsalmon;
+  cursor: not-allowed;
+}
+.seat-container {
+  display: flex;
+  width: 100px;
+  flex-wrap: wrap;
+}
+.proceed {
+  text-align: center;
+  margin: 20px auto;
+  width: 100px;
+}
+.avail-1{
+  background-image: url("https://i.pinimg.com/736x/da/00/e9/da00e972822019ef16a3a42ca61d00a9--colour-the-railroad.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 10rem; */
+  height: 82.25%;
+}
+.buses-avail-container{
+  width: 40%;
+}
+.sele{
+  background-color: aquamarine;
+  /* background-image: url("india.jpg"); */
+  text-align: center;
+}
+.seat-container {
+  display: flex;
+  width: 100px;
+  padding: 10px 620px;
+
+  flex-wrap: wrap;
+ 
+}
+.proceed {
+  text-align: center;
+  color: black;
+  margin: 20px 550px;
+  width: 100px;
+}
+.seat {
+  visibility: hidden;
+  border: 10px solid;
+  
+}
+
+.seat + label {
+  background-color: lightcyan;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.seat:checked + label {
+  background-color: green;
+
+  
+}
+.seat:disabled + label {
+  background-color: lightsalmon;
+  cursor: not-allowed;
+}
+
+    /* background-image: url("https://tse3.mm.bing.net/th?id=OIP.hpvVeJr7AuBhk7GpVX_E-QHaEK&pid=Api&P=0&h=180"); */
+   
+    .passinfo {
+      padding: 20px;
+      text-align: center;
+      background-image: url("https://tse3.mm.bing.net/th?id=OIP.hpvVeJr7AuBhk7GpVX_E-QHaEK&pid=Api&P=0&h=180");
+      
+      height: 82.25%;
+      background-size: cover;
+    }
+    
+    .passbox {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      text-align: left;
+      background-color: #ccc;
+    }
+.eee{
+  background-size: cover;
+  height: 82.25%;
+}
+.www{
+  background-size: cover;
+  height: 82.25%;
+}
+@media screen and (max-width: 600px) {
+  .passbox {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+.passinfo {
+  padding: 20px;
+  text-align: center;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.hpvVeJr7AuBhk7GpVX_E-QHaEK&pid=Api&P=0&h=180");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.passbox {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  
+}
+
+.passbox h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.passbox label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.passbox input[type="number"],
+.passbox input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.passbox button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.passbox button:hover {
+  background-color: #0056b3;
+}
+.txt-info{
+  color: black;
+}

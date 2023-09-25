@@ -3,6 +3,7 @@ import { withRouter, useNavigate } from 'react-router-dom';
 import './search.css';
 import { useDispatch } from 'react-redux';
 
+
 export default () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -14,30 +15,37 @@ export default () => {
   const updateValue = (e) => {
     setSearch({ ...search, [e.target.name]: e.target.value });
   };
-  const searchForBuses = () => {
+  const searchForTrains = () => {
     setIsValidated(true);
-    if (!search.from || !search.to || !search.date) {
+    const currentDate = new Date();
+    const selectedDate = new Date(search.date);
+    const from=search.from;
+    const to =search.to;
+    if (!search.from || !search.to || !search.date||selectedDate<currentDate||from==to) {
       setError(true);
       console.log(search);
       return;
     }
-    dispatch({ search, type: 'SEARCH_BUS' });
+    dispatch({ search, type: 'SEARCH_TRAIN' });
     navigate('availability');
   };
 
   return (
     <div className='background'>
-     
-
       <div className="top-bar">
-    <div className="logo">TNRTC</div>
+    <div className="logo">TNRTC
+   <h6> Government of Tamil Nadu</h6>
+    </div>
     <ul className="nav-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/login">Login</a></li>
-      <li><a href="/about">About us</a></li>
-    
+      <li><a href="/">HOME</a></li>
+      <li><a href="/login">LOGIN</a></li>
+      <li><a href="/about">ABOUT US</a></li>
+      <li><a href="/trains">TRAINS</a></li>
+      <li><a href="/">LOGOUT</a></li>
+      
     </ul>
   </div>
+ 
       <br></br><br></br><br></br><br></br><br></br>
     <div
       class="search-container"
@@ -45,30 +53,36 @@ export default () => {
         isValidated ? 'was-validated search-container' : 'search-container'
       }
     >
-      <h2> Search Trains</h2>
-      {showError ? <p class="error-alert"> Please enter all values </p> : ''}
-      <div className="form-group">
+      <h2 className='z'> Explore departure</h2>
+     
+      <div className="form-group-row">
         <label>
           From:
-          <input required type="text" name="from" onChange={updateValue} />
+          <input className='f'required type="text" name="from" onChange={updateValue} />
         </label>
       </div>
 
-      <div className="form-group">
+      <div className="form-group-row">
         <label>
           To:
-          <input required type="text" name="to" onChange={updateValue} />
+          <input className='t'required type="text" name="to" onChange={updateValue} />
         </label>
       </div>
 
       <div className="form-group">
         <label>
           Date:
-          <input required type="date" name="date" onChange={updateValue} />
+          <input className='d' required type="date" name="date" onChange={updateValue} />
         </label>
       </div>
-      <button onClick={searchForBuses}> Search </button>
+      <button className='s'onClick={searchForTrains}> Search </button>
     </div>
+    <br>
+    </br>
+    <div className='alllert'>
+    {showError ? <p class="error-alert box-small"> Enter valid data </p> : ''}
+    </div><br></br><br></br>
+    
     </div>
     
   );

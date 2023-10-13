@@ -1,0 +1,116 @@
+.payment-page{
+    background-color: black;
+    text-align: center;
+    height: 82.25%;
+    color: aliceblue;
+}
+.pass{
+   
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+        background-color: #ccc;
+        color: rgb(237, 228, 228);
+        font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgb(231, 239, 231);
+  border-style: double;
+  background-color: rgba(237, 243, 237, 0.598);
+  position: relative;
+}
+.happy{
+    margin: 200px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgb(231, 239, 231);
+  border-style: double;
+  background-color: rgba(237, 243, 237, 0.598);
+  position: relative;
+}
+/* Payment Page Styles */
+.payment-page {
+    background-color: black;
+    text-align: center;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Payment Details Styles */
+  .pass {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ccc;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgb(231, 239, 231);
+    border-style: double;
+    background-color: rgba(237, 243, 237, 0.598);
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in 1s ease-in-out forwards; /* Animation for fade-in */
+  }
+  
+  /* Happy Journey Message Styles */
+  .happy {
+    margin: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgb(231, 239, 231);
+    border-style: double;
+    background-color: rgba(237, 243, 237, 0.598);
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in 1s ease-in-out forwards; /* Animation for fade-in */
+    
+  }
+  
+  /* Print Button Styles */
+  .btn-dark {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-dark:hover {
+    background-color: #292b2c;
+  }
+  
+  /* Keyframe Animation for Fade-in */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .redux{
+    top: 14%;
+    position: absolute;
+    left: 33%;
+  }
